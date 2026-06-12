@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Panel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="page-container">
+
+    <div class="form-card">
+
+        <span class="tag">ADMIN PANEL</span>
+
+        <h1>Login</h1>
+
+        <p class="subtitle">
+            Authorized access only.
+        </p>
+
+        <div id="loginBox">
+
+            <input
+            type="password"
+            id="adminPass"
+            placeholder="Enter Password">
+
+            <button onclick="loginAdmin()">
+                Login
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="adminPanel" style="display:none;">
+
+    <section class="gallery-section">
+
+        <div class="section-header">
+
+            <h2>Manage Entries</h2>
+
+            <p>Edit or remove submissions.</p>
+
+        </div>
+
+        <div id="adminGallery" class="gallery"></div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

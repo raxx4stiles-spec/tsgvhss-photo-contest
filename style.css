@@ -1,0 +1,375 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+  }
+  
+  body{
+  background:#09090b;
+  color:white;
+  overflow-x:hidden;
+  }
+  
+  /* HERO */
+  
+  .hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:30px 20px;
+  
+  background:
+  radial-gradient(circle at top left,#4f46e5 0%,transparent 40%),
+  radial-gradient(circle at bottom right,#9333ea 0%,transparent 40%),
+  #09090b;
+  }
+  
+  .hero-content{
+  width:100%;
+  max-width:900px;
+  text-align:center;
+  }
+  
+  .tag{
+  display:inline-block;
+  padding:10px 18px;
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
+  font-size:.85rem;
+  letter-spacing:2px;
+  margin-bottom:25px;
+  }
+  
+  .hero h1{
+  font-size:clamp(3rem,12vw,7rem);
+  line-height:.95;
+  font-weight:800;
+  }
+  
+  .hero h1 span{
+  display:block;
+  color:#a855f7;
+  margin-top:8px;
+  }
+  
+  .hero p{
+  max-width:600px;
+  margin:25px auto;
+  font-size:1rem;
+  line-height:1.8;
+  opacity:.8;
+  }
+  
+  .hero-buttons{
+  margin-top:25px;
+  }
+  
+  .hero-buttons a{
+  display:inline-block;
+  padding:16px 32px;
+  border-radius:999px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  
+  background:
+  linear-gradient(
+  135deg,
+  #6366f1,
+  #9333ea
+  );
+  
+  box-shadow:
+  0 10px 25px rgba(147,51,234,.3);
+  }
+  
+  /* INFO */
+  
+  .info{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+  
+  padding:20px;
+  max-width:1100px;
+  margin:auto;
+  margin-top:-60px;
+  }
+  
+  .info-card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  
+  padding:25px;
+  border-radius:20px;
+  
+  backdrop-filter:blur(20px);
+  
+  text-align:center;
+  }
+  
+  .info-card h3{
+  margin-bottom:10px;
+  }
+  
+  /* SECTION */
+  
+  .gallery-section{
+  padding:70px 20px;
+  }
+  
+  .section-header{
+  text-align:center;
+  margin-bottom:35px;
+  }
+  
+  .section-header h2{
+  font-size:2rem;
+  margin-bottom:10px;
+  }
+  
+  /* GALLERY */
+  
+  .gallery{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+  
+  gap:20px;
+  max-width:1300px;
+  margin:auto;
+  }
+  
+  .card{
+  background:#18181b;
+  border-radius:20px;
+  overflow:hidden;
+  
+  transition:.3s;
+  }
+  
+  .card:hover{
+  transform:translateY(-6px);
+  }
+  
+  .card img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+    }
+    
+  .card h3{
+  padding:15px;
+  }
+  
+  .card p{
+  padding:0 15px 20px;
+  opacity:.75;
+  }
+  
+  /* FOOTER */
+  
+  footer{
+  padding:40px 20px;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.08);
+  }
+  
+  /* MOBILE */
+  
+  @media(max-width:768px){
+  
+  .hero{
+  padding:20px;
+  min-height:90vh;
+  }
+  
+  .hero h1{
+    font-size:clamp(2.4rem, 9vw, 6rem);
+    line-height:0.95
+    }
+    
+  .hero p{
+  font-size:.95rem;
+  }
+  
+  .info{
+  grid-template-columns:1fr;
+  margin-top:0;
+  padding:20px;
+  }
+  
+  .info-card{
+  padding:20px;
+  }
+  
+  .gallery{
+  grid-template-columns:1fr;
+  }
+  
+  .card img{
+  height:240px;
+  }
+  
+  .section-header h2{
+  font-size:1.7rem;
+  }
+  
+  .hero-buttons a{
+  width:100%;
+  max-width:280px;
+  }
+  }
+
+  /* UPLOAD + ADMIN */
+
+.page-container{
+  min-height:100vh;
+  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+  padding:20px;
+  }
+  
+  .form-card{
+  
+  width:100%;
+  max-width:500px;
+  
+  background:rgba(255,255,255,.05);
+  
+  border:1px solid rgba(255,255,255,.08);
+  
+  border-radius:30px;
+  
+  padding:30px;
+  
+  backdrop-filter:blur(20px);
+  }
+  
+  .form-card h1{
+  margin-top:15px;
+  margin-bottom:10px;
+  }
+  
+  .subtitle{
+  opacity:.7;
+  margin-bottom:25px;
+  }
+  
+  .form-card input,
+  .form-card textarea{
+  
+  width:100%;
+  
+  padding:15px;
+  
+  margin-bottom:15px;
+  
+  border:none;
+  
+  outline:none;
+  
+  border-radius:15px;
+  
+  background:#18181b;
+  
+  color:white;
+  }
+  
+  .form-card textarea{
+  height:120px;
+  resize:none;
+  }
+  
+  .form-card button{
+  
+  width:100%;
+  
+  padding:15px;
+  
+  border:none;
+  
+  cursor:pointer;
+  
+  border-radius:15px;
+  
+  font-size:1rem;
+  
+  font-weight:600;
+  
+  color:white;
+  
+  background:
+  linear-gradient(
+  135deg,
+  #6366f1,
+  #9333ea
+  );
+  }
+  
+  #msg{
+  margin-top:15px;
+  text-align:center;
+  }
+  
+  @media(max-width:768px){
+  
+  .form-card{
+  padding:20px;
+  border-radius:20px;
+  }
+  
+  .form-card h1{
+  font-size:2rem;
+  }
+  
+  }
+
+  /* Remove blue tap highlight on mobile */
+
+*{
+  -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Buttons */
+  
+  button{
+  outline:none;
+  border:none;
+  }
+  
+  button:focus,
+  button:active{
+  outline:none;
+  }
+  
+  /* Links */
+  
+  a{
+  text-decoration:none;
+  -webkit-tap-highlight-color: transparent;
+  }
+  
+  a:focus,
+  a:active{
+  outline:none;
+  }
+
+  #msg{
+    margin-top:15px;
+    text-align:center;
+    font-weight:500;
+    min-height:24px;
+    }
+    
+    button:disabled{
+    opacity:.7;
+    cursor:not-allowed;
+    }

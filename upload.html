@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Submit Entry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="page-container">
+
+    <div class="form-card">
+
+        <span class="tag">TSGVHSS PAYYOLI</span>
+
+        <h1>Submit Your Entry</h1>
+
+        <p class="subtitle">
+            Upload your photograph and participate in the competition.
+        </p>
+
+        <input
+        type="text"
+        id="name"
+        placeholder="Your Name">
+
+        <textarea
+        id="desc"
+        placeholder="Photo Description"></textarea>
+
+        <input
+        type="file"
+        id="file">
+
+        <button onclick="uploadPhoto()">
+            Upload Photo
+        </button>
+
+        <p id="msg"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
